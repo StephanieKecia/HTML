@@ -6,37 +6,60 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <script src="//code.jquery.com/jquery-1.10.2.js"></script>
-    <script>
-        $(function () {
-            $("#header").load("header.html");
-            $("#footer").load("footer.html");
-        });
-    </script>
     <style>
         body {
             background-image: url('imagens/wallpaper006.jpg');
+
+            /*
+            background-size:auto;
+            background-size: cover; cobre o site completo e corta a imagem p isso.
+            background-size: contain; cortando p aparecer toda.
+            background-repeat: no-repeat;
+            background-position: left bottom; primeiro coluna e depois linha
+            background-attachment: fixed; fundo fixo e o conteúdo móvel*/
+
+
+            /* position: relative (padrão)
+            position: absolute (conteúdo não muda em relação ao seu "pai", permanece na mesma posição.)
+            
+            transform:translate(-50%, -50%) mudar o ponto de referencia do box, que por padrão é left top.
+            
+            
+            */
+
+
+            /*Shorthand - background
+                color > image > position > repeat > [size] > attachment
+                * com o size não funciona, deixa separado.
+            
+            */
+        }
+
+        body{
+            background-image:url('imagens/wallpaper002.jpg');
+            background-repeat: no-repeat;
+            background-position: center center;
+            background-size: cover;
+            height: 97vh;
+            background-attachment: fixed;
         }
 
         div.quadrado {
-            width: 200px;
-            height: 200px;
-            border: 2px solid;
+            max-width: 600px;
+            height: auto;
+            border: 1px solid;
             border-color: black;
-            display: inline-block;
+            margin: auto;
+            padding: 10px;
+            margin-top: 10px;
+            border-radius: 20px;
+            background-color: white;
         }
-
-        div#q1 {
-            background-color: skyblue;
+        
+        h1{
+            text-align: center;
         }
-
-        div#q2 {
-            background-image: linear-gradient(to bottom, yellow, red);
-        }
-
-        div#q3 {
-            background-image: url('imagens/pattern001.png');
-        }
+       
     </style>
     
 </head>
@@ -44,21 +67,22 @@
     <header>
 
     </header>
-
-    <body>
-        <div id="header"></div>
-        <!--Remaining section-->
-        <div id="footer"></div>
-    </body> 
     <div class="quadrado" id="q1">
-
+        <h1>
+            Teste de background!
+        </h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic laboriosam iure sapiente ipsa praesentium earum tenetur consequatur, cum excepturi facilis nihil. Ratione impedit sequi ipsam corporis dicta error fugit consequuntur.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic laboriosam iure sapiente ipsa praesentium earum tenetur consequatur, cum excepturi facilis nihil. Ratione impedit sequi ipsam corporis dicta error fugit consequuntur.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic laboriosam iure sapiente ipsa praesentium earum tenetur consequatur, cum excepturi facilis nihil. Ratione impedit sequi ipsam corporis dicta error fugit consequuntur.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic laboriosam iure sapiente ipsa praesentium earum tenetur consequatur, cum excepturi facilis nihil. Ratione impedit sequi ipsam corporis dicta error fugit consequuntur.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic laboriosam iure sapiente ipsa praesentium earum tenetur consequatur, cum excepturi facilis nihil. Ratione impedit sequi ipsam corporis dicta error fugit consequuntur.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic laboriosam iure sapiente ipsa praesentium earum tenetur consequatur, cum excepturi facilis nihil. Ratione impedit sequi ipsam corporis dicta error fugit consequuntur.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic laboriosam iure sapiente ipsa praesentium earum tenetur consequatur, cum excepturi facilis nihil. Ratione impedit sequi ipsam corporis dicta error fugit consequuntur.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic laboriosam iure sapiente ipsa praesentium earum tenetur consequatur, cum excepturi facilis nihil. Ratione impedit sequi ipsam corporis dicta error fugit consequuntur.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic laboriosam iure sapiente ipsa praesentium earum tenetur consequatur, cum excepturi facilis nihil. Ratione impedit sequi ipsam corporis dicta error fugit consequuntur.</p>
+        
     </div>
-    <div class="quadrado" id="q2">
-
-    </div>
-    <div class="quadrado" id="q3">
-
-    </div>
+   
 
 </body>
 
